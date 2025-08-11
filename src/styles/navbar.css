@@ -1,0 +1,115 @@
+.navbar-horizontal-root {
+  width: 100%;
+}
+.navbar-horizontal-root .main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.navbar-horizontal-root .navbar-flex-3col {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 70px !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.navbar-horizontal-root .navbar-logo,
+.navbar-horizontal-root .navbar-center,
+.navbar-horizontal-root .navbar-user {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+}
+.navbar-horizontal-root .navbar-center {
+  gap: 40px !important;
+  flex: 1 1 0;
+  justify-content: center !important;
+}
+.navbar-horizontal-root .navbar-logo {
+  gap: 8px !important;
+}
+.navbar-horizontal-root .navbar-brand-link {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #223263;
+  text-decoration: none;
+  gap: 8px;
+}
+.navbar-horizontal-root .navbar-brand-link ion-icon {
+  font-size: 1.7rem;
+  color: #223263;
+}
+.navbar-horizontal-root .nav-link {
+  color: #223263;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-horizontal-root .nav-link.active, .navbar-horizontal-root .nav-link:focus, .navbar-horizontal-root .nav-link:hover {
+  background: #e6edfa;
+  color: #1a237e;
+}
+.navbar-horizontal-root .navbar-user {
+  gap: 18px !important;
+}
+.navbar-horizontal-root .navbar-greeting {
+  color: #223263;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar-horizontal-root .navbar-logout {
+  background: #223263;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navbar-horizontal-root .navbar-logout:hover {
+  background: #1a1f3c;
+}
+@media (max-width: 900px) {
+  .navbar-horizontal-root .navbar-flex-3col {
+    height: 56px;
+    padding: 0 12px;
+  }
+  .navbar-horizontal-root .navbar-center {
+    gap: 18px !important;
+  }
+  .navbar-horizontal-root .navbar-brand-link {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-horizontal-root .navbar-center {
+    gap: 10px !important;
+  }
+  .navbar-horizontal-root .navbar-greeting {
+    display: none;
+  }
+  .navbar-horizontal-root .navbar-logout {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+}
+body {
+  padding-top: 70px; /* Match your navbar height */
+}
+.main-content {
+  padding-top: 70px; /* Match your navbar height */
+}

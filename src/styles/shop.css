@@ -1,0 +1,470 @@
+/* Shop Page Styles */
+.shop-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.shop-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.shop-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.shop-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  padding: 40px 0;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-controls {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 450px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.category-filter {
+  min-width: 180px;
+}
+
+.category-select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.category-select:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Products Section */
+.products-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+  justify-items: stretch;
+}
+
+/* Enhanced ProductCard Styles */
+.products-grid .product {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 3/4; /* Adjust as needed */
+}
+
+.products-grid .product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.products-grid .product-image-container {
+  width: 100%;
+  aspect-ratio: 3/2; /* Try 3/2 or 4/3 for phones, adjust as needed */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-grid .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Use contain for full image, cover for cropping */
+  border-radius: 0;
+  display: block;
+}
+
+.products-grid .product:hover img {
+  transform: scale(1.05);
+}
+
+.products-grid .product-details {
+  padding: 40px;
+  background: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products-grid .product-details h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+  min-height: 3.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.products-grid .product-details h3:hover {
+  color: #667eea;
+}
+
+.products-grid .rate {
+  margin-bottom: 15px;
+}
+
+.products-grid .rate i {
+  color: #ffc107;
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.products-grid .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.products-grid .price h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0;
+}
+
+.products-grid .price .add {
+  background: #667eea;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.products-grid .price .add:hover {
+  background: #5a6fd8;
+  transform: scale(1.1);
+}
+
+.products-grid .price .add:active {
+  transform: scale(0.95);
+}
+
+/* Discount Badge */
+.products-grid .discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ff4757;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* Product Like Button */
+.products-grid .product-like {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.products-grid .product-like:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.products-grid .product-like ion-icon {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* No Products Found */
+.no-products {
+  text-align: center;
+  padding: 80px 20px;
+  color: #666;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.no-products h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.no-products p {
+  font-size: 1.1rem;
+}
+
+/* Results Info */
+.results-info {
+  background: white;
+  padding: 25px 0;
+  border-top: 1px solid #e9ecef;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.results-text {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Toast Notification Styles */
+.toast-success {
+  background: #28a745 !important;
+  color: white !important;
+}
+
+.toast-error {
+  background: #dc3545 !important;
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-header {
+    padding: 60px 0;
+  }
+  
+  .shop-title {
+    font-size: 2.5rem;
+  }
+  
+  .shop-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .search-box {
+    max-width: none;
+  }
+  
+  .category-filter {
+    min-width: auto;
+  }
+  
+  .products-section {
+    padding: 40px 0;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .products-grid .product {
+    min-height: 420px;
+    max-width: 100%;
+  }
+  
+  .products-grid .product img {
+    height: 360px;
+  }
+  
+  .products-grid .product-details {
+    padding: 35px;
+  }
+  
+  .products-grid .product-details h3 {
+    font-size: 1.5rem;
+    min-height: 3.2rem;
+  }
+  
+  .products-grid .price h4 {
+    font-size: 1.7rem;
+  }
+  
+  .products-grid .price .add {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-header {
+    padding: 50px 0;
+  }
+  
+  .shop-title {
+    font-size: 2rem;
+  }
+  
+  .shop-subtitle {
+    font-size: 1rem;
+  }
+  
+  .filter-section {
+    padding: 30px 0;
+  }
+  
+  .search-input,
+  .category-select {
+    padding: 12px 16px;
+  }
+  
+  .products-section {
+    padding: 30px 0;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .products-grid .product {
+    min-height: 500px;
+  }
+  
+  .products-grid .product img {
+    height: 320px;
+  }
+  
+  .products-grid .product-details {
+    padding: 30px;
+  }
+  
+  .products-grid .product-details h3 {
+    font-size: 1.4rem;
+    min-height: 3rem;
+  }
+  
+  .products-grid .price h4 {
+    font-size: 1.6rem;
+  }
+  
+  .products-grid .price .add {
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+  
+  .products-grid .discount {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .products-grid .product-like {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .products-grid .product-like ion-icon {
+    font-size: 1.1rem;
+  }
+}
+

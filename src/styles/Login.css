@@ -1,0 +1,26 @@
+/* src/styles/Login.css */
+
+.login-wrapper {
+  margin: 100px auto 40px auto; /* 100px to adjust below fixed navbar */
+  max-width: 500px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-wrapper .form-control {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.login-wrapper .btn {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+}

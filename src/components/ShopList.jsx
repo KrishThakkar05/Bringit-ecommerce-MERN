@@ -12,7 +12,7 @@ const ShopList = ({ productItems }) => {
       {productItems.map((productItem) => {
         return (
           <ProductCard
-            key={productItem.id}
+            key={productItem._id}
             title={null}
             productItem={productItem}
           />
