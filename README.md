@@ -1,18 +1,21 @@
 📌 Project Description – BringIt
 
-BringIt ek full-stack e-commerce web application hai jo Node.js, Express.js aur MongoDB par built hai. Project ko run karne ke liye npm start command use hoti hai, jo backend server ko start karta hai aur MongoDB database se connect karta hai.
+BringIt is a full-stack e-commerce web application built with Node.js, Express.js, and MongoDB. The project is run using the npm start command, which starts the backend server and connects it to the MongoDB database.
+
+npm install
+npm install bycrypt
 
 💡 Functionality:
 
-Product Listing: Products MongoDB se fetch hote hain aur UI me list dikhte hain.
+Product Listing: Products are fetched from MongoDB and displayed in the UI as a list.
 
-Search & Filter: Users product ka naam type karke relevant results dekh sakte hain (e.g., "chair" likhne par sirf chairs list hongi).
+Search & Filter: Users can type a product name to see relevant results (e.g., typing "chair" will only list chairs).
 
-Add to Cart: Users kisi product ko cart me add kar sakte hain, quantity update kar sakte hain ya remove kar sakte hain.
+Add to Cart: Users can add products to the cart, update quantities, or remove items.
 
-Checkout: Cart me selected items ke total amount ke sath checkout kar sakte hain.
+Checkout: Users can proceed to checkout with the selected items, along with the total amount.
 
-Order Creation: Checkout ke baad MongoDB me order save hota hai, ek unique order number generate hota hai, aur cart clear ho jata hai.
+Order Creation: After checkout, the order is saved in MongoDB, a unique order number is generated, and the cart is cleared.
 
 🛠 Tech Stack:
 
