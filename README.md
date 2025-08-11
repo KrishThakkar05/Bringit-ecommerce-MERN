@@ -3,8 +3,7 @@
 BringIt is a full-stack e-commerce web application built with Node.js, Express.js, and MongoDB. The project is run using the npm start command, which starts the backend server and connects it to the MongoDB database.
 
 npm install
-npm install bycrypt
-
+npm install bcrypt
 💡 Functionality:
 
 Product Listing: Products are fetched from MongoDB and displayed in the UI as a list.
